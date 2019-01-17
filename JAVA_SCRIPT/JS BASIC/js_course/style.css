@@ -1,0 +1,15 @@
+
+.tekst {
+    color: blue;
+}
+.Container_New{
+    background: pink;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.logo_picture{
+    height: 25%;
+    width: 25%;
+}
