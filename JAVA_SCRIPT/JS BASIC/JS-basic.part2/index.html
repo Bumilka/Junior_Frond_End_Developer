@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Struktura danych</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        /*
+    const obj = {name:'Bob', age:33};
+    for(const prop in obj){
+        console.log(obj[prop]);
+    }
+    // Object's .enetries() method - zwracania tablicy tablic
+    Object.entries(obj);
+    console.log(Object.entries(obj));
+
+    // Object's .key() and .values() methods
+
+    // zwraca properties
+    Object.keys(obj);
+    console.log(Object.keys(obj));
+    // zwraca  values
+    Object.values(obj);
+    console.log(Object.values(obj));
+
+    // Object's string repesentation
+    const x = {name:'Kasia', age:22}
+    JSON.stringify(x);
+    console.log(JSON.stringify(x));
+
+    let y = JSON.stringify(x);
+    console.log(JSON.stringify(x))
+
+    // mało praktykowane
+    JSON.parse('{"name":"Kasia","age":22}');
+    console.log(JSON.parse('{"name":"Kasia", "age":22}'));
+    
+    // Math.random()
+    Math.floor(4,35)
+    console.log(Math.ceil(4.5))
+
+    Math.floor(4,35)
+    console.log(Math.floor(4.5))
+
+
+    Math.round(4,5);
+    console.log((Math.round(4.5)))
+    
+
+    //Date object : najlepiej używać frameworku np. z momentjs.com
+
+    */
+    </script>
+    <script>
+
+    /*
+    
+    //Local storage
+
+    localStorage.setItem('key', 'value');
+    console.log(localStorage);
+
+    sessionStorage.setItem('key', 'value');
+    console.log(sessionStorage);
+
+    // var data = senssionStorage.getItem('key');
+
+    // sessionStorageStorage.removeltem('key')
+
+    */
+
+/* zadanie, nie wyszło
+    let woman = {clothes:'dress', size:36};
+
+    let womanStr = JSON.stringify(woman);
+    localStorage.setItem('woman', womanStr);
+
+    JSON.parse(' {clothes:'dress', size:36}');
+*/
+
+
+        const arr = ['Kasia', 'Magda', 'Natalia'];
+        // const res = arr.map(name => name +1); // dodajemy +1 do każdego imienia
+        const res = arr.map(name =>{console.log(name);
+        return (name+ 1);
+        });
+
+        // method chaining
+
+        console.log('res', res);
+
+        const resChainig = arr
+        .filter(name => name.charAt(0) ==='M')
+        .map(name => `${name} Kowalski`);
+
+        console.log('res', resChainig);
+
+    </script>
+</body>
+</html>

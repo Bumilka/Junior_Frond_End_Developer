@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java Script - Basic- Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <h1>First steps in JS</h1>
+    <h2 id="paragraph_task">Task 1</h2>
+        <li>Open your console and write alert(‘Hello World’);
+        <script>
+            console.log("TASK 1 is inactive");
+              //alert("Hello world!");
+        </script>
+    <h2 id="paragraph_task">Task 2</h2>
+        <li>Put alert(‘Hello World’); in script tags on your page or attach it via external js file.
+        <script>
+            console.log("TASK 2 is inactive");
+            //alert("Hello world!");
+        </script>
+    <h2 id="paragraph_task">Task 3</h2>
+        <li>Create string and number literal and use typeof operator in order to check its type
+        <script>
+            console.log("TASK 3");
+             let str1 = "String 1";
+
+            console.log(str1);
+
+            let num = 23;
+
+            console.log(num);
+
+            typeof(str1);
+
+            console.log("str1 to " + typeof(str1));
+            console.log("num to " + typeof(num));
+        </script>
+    <h2 id="paragraph_task">Task 4</h2>
+        <li>Create let variable and log it. Create const variable and try to reassign it.
+        <script>
+            console.log("TASK 4");
+            /*
+            const x = 10;
+            console.log(x);
+            let x = 20;
+            console.log(x);
+            */
+        </script>
+    <h2 id="paragraph_task">Task 5</h2>
+    <h3>Comparison operators</h3>
+        <li>Create 8 examples with each comparison operator, so that the result will be true
+        <li>Create 8 examples with each comparison operator, so that the result will be false
+        <script>
+            console.log("TASK 5");
+            
+            let a = 2;
+            let b = 2;
+            
+            console.log(a++); 
+            console.log(a++); //jeśli operator jest umieszczony po zmiennej to najpierw jest element wylogowany, a póxniej dopiero jest dokonana inkrementacja
+            console.log(a);
+            console.log(++a);
+            console.log(a);
+            console.log(-a);
+            
+            
+            console.log(a == b);
+            console.log(a === b);
+            b = 4;
+            console.log(a != b);
+            console.log(a !== b);
+            console.log( a < b);
+            a = 6;
+            console.log(a > b);
+            console.log(a >= b);
+            b = 6;
+            console.log(a <= b);
+            a = 2;
+            console.log(a == b);
+            console.log(a === b);
+            b = 2;
+            console.log(a != b);
+            console.log(a !== b);
+            a = 3;
+            console.log(a < b);
+            console.log(a <= b);
+            a = 1;
+            console.log(a > b);
+            console.log(a >= b);
+
+        </script>
+    <h2 id="paragraph_task">Task 6</h2>
+    <h3>Logical operators</h3>
+        <li> Log 3 statements with true 
+        <li>Log 3 statements with false 
+        <li> Mix at least to different operators
+        <script>
+            console.log("TASK 6");
+            let aa = 10;
+            let bb = 15;
+            let cc = 20;
+            console.log( ((aa == bb) || (aa < bb) ) || (aa > cc));
+            console.log( ((aa !== bb) || (aa > bb) && (aa < cc) ));
+            console.log( ((aa !== bb) && (aa < bb) ));
+            console.log( (aa == bb) && (aa > bb) || (aa > cc)); 
+            console.log( !(aa == bb) && (aa != bb) && (aa > cc));
+            console.log( (aa != bb) && (aa >= bb) && (bb <= cc));
+            console.log( (!(aa != bb) || (aa > bb) || !(aa > cc)) || (aa <= cc)) ;
+        </script>
+    <h2 id="paragraph_task">Task 7</h2>
+    <h3> If-else statements, ternary operator</h3>
+        <li> Declare two variables. Create if-else-if statement, which checks those variables. Each of logical path
+        should log different messages. Make them show every path. 
+        <li> Rewrite it to ternary shape
+        <script>
+            console.log("TASK 7");
+            let a1 = 10;
+            let b2 = 15;
+            if ( a1 === 10 && b2 === 10){
+                console.log("a i b jest równe 10")
+            } else if ( a1 === 10 && b2 === 20 ){
+                console.log("a jest równe 10, a b jest równe 20");
+            } else{
+                console.log("Żaden z warunków nie spełnia wymagań")
+            }
+            //ternary shape
+            console.log("Stwierdzenie A jest mniejsze od B to " + (a1 > b2 ? true : false));
+        </script>
+    <h2 id="paragraph_task">Task 8</h2>
+    <h3>Switch statement</h3>
+        <li> Declare a variable. Write switch statement, which has 3 logic paths and default path. First logic part
+        should be chosen. 
+        <li> Change variable so that the second logic path is chosen. 
+        <li> Change variable so that
+        default path chosen. 
+        <li>Change the statement, so few logical paths are merged.
+        <script>
+            console.log("TASK 8");
+            let date = '2018';
+            switch (date){
+                case '2018': console.log("Mamy 2018 rok");
+                case '2019': console.log("Data jest w przyszłości"); break
+                default: console.log("Poza zakresem kalendarza");
+            }
+        </script>
+    <h2 id="paragraph_task">Task 9</h2>
+    <h3>Array</h3>
+        <li> Create an array with next values Ania, Ewelina, Karina, Elina. 
+        <li> Add Andromeda, Natasha 
+        <li> Get index of Ewelina, store it in separate variable, now add 2 to this index and store 
+        <li> slice it from stored index to Natasha’s index to new array 
+        <li> Unshift new name Shepard 
+        <li> Compare index 3 from initial array to index 1 from new. Should be true.
+        <script>
+            console.log("TASK 9");
+            let names = ["Ania", "Ewelina", "Karina", "Elina"];
+            console.log(names);
+            names.push("Andromeda", "Natasha");
+            console.log(names);
+            let indexOfEwelina = names.indexOf("Ewelina");
+            console.log(indexOfEwelina);
+            newIndexOfEwelina = indexOfEwelina + 2;
+            console.log(newIndexOfEwelina);
+            let newArray = (names.slice(newIndexOfEwelina, names.indexOf("Natasha")));
+            console.log(newArray);
+            newArray.unshift("Shepard");
+            console.log(newArray);
+            if(names[3] == newArray[1]){
+                console.log(true);
+            }else{
+                console.log(false);
+            }
+        </script>
+    <h2 id="paragraph_task">Task 10</h2>
+    <h3>Loops</h3>
+        <li> Declare an array with numbers from 1 to 35. Use for for it 
+        <li> Now iterate over the array and for numbers from 1 to 15 log current number and index. Put console.log(‘Iteration’, i) at the very end of the for body 
+        <li> For numbers 16 to 25 do nothing with continue. 
+        <li> For numbers from 25 to 30 check if it can be divided without rest and log those which can. 
+        <li> Stop iteration if the value equals to 31 
+        <script>
+            console.log("TASK 10");
+
+            let start = 1;
+            let end = 35;
+            let array = [];
+
+                for (let i = 0; i <= 35; i++){
+
+                    array.push(i); 
+
+                }
+                console.log(array);
+
+                for (let i = 0; i <= array.length; i++ ){
+                    if (i <= 15){
+                    
+                    //console.log(i, "First if");
+                    
+                    }
+                
+                    if (i >= 15 && i <= 25){
+
+                        console.log("continue");
+                        continue;
+                    }
+
+                    if (i >= 25 && i <= 30){
+
+                        console.log('second if')
+                        let result = i % 2;
+
+
+                        if (result == 0)
+                        {
+                            console.log('third if');
+                            console.log(i, result); 
+                        }
+                        
+                    }
+
+                    if (i === 31)
+                    {
+                        break;
+                    }
+
+                    console.warn('warn', i);
+                }
+        </script>
+    <h2 id="paragraph_task">Task 11</h2>
+    <h3>Objects in JS</h3>
+        <li> Create an object of hero. It has 3 properties: strength(num), knowledge(str) and stamina(num). Fill it with random values. 
+        <li> Create an object of enemy. Enemy has same properties plus additional - loot, which is collection of 3 valuable items. Gold(str) item should among them. Fill it with random values. 
+        <li> Compare strength of the hero and the enemy, if hero is stronger, then iterate over loot and find GOLD!!! Log it with warn.
+        <script>
+            console.log("TASK 11");
+                       
+             let hero = {
+                 strength: 0,
+                 knowledge: 'avg',
+                 stamina: 0
+             };
+            
+             let enemy = {
+                 strength: 0,
+                 knowledge: 'avg',
+                 stamina: 0,
+                 loot: [
+                     'useless', 'GOLD', 'trousers'
+                 ]
+             };
+            
+             hero.strength = getRandomValue();
+             hero.stamina = getRandomValue();
+            
+             enemy.strength = getRandomValue();
+             enemy.stamina = getRandomValue();
+            
+             if(hero.strength > enemy.strength) {
+                 for(let i = 0; i < enemy.loot.length; i++){
+                     if(enemy.loot[i] === 'GOLD') {
+                         console.warn('I have GOLD!!!!');
+                     }
+                 }
+             }
+            
+            
+             function getRandomValue(){
+                 return +Number(Math.random() * 100).toPrecision(4);
+             }
+        </script>
+
+    <h2 id="paragraph_task">Task 12</h2>
+    <h3>String object</h3>
+         <li> Create three string objects with value ‘STRElanger THinevgsen’. <li> Create if statement, which compares 2 of 3 objects for equality, in the case of false log error with message ’poor me’. Compare the objects. 
+         <li> Create additional if statement, which will pass the comparison.
+        <li> In the true case extract 3,4,15,16,19,20 indices and unite them. Log the value with message ‘I am <............<your result>>’
+        <script>
+            console.log("TASK 12");
+              
+             let things1 = new String('STRElanger THinevgsen');
+             let things2 = new String('STRElanger THinevgsen');
+             let things3 = things2;
+            
+             if(things1 === things3) {
+            
+             } else {
+                 console.warn('poor me');
+             }
+            
+             if(things2 === things3) {
+                 let enigmaticName = things1.slice(3,5) + things1.slice(15, 17) + things1.slice(19, 21);
+                 console.warn(`I am ${enigmaticName}`);
+             }
+        </script>
+
+    <h2 id="paragraph_task">Task 13</h2>
+    <h3>Functios and scopes</h3>
+    <h4>Task 13-a</h4>
+        <li>>Create four objects - groundZerg and flyingZerg. Each object has power, health, armor and range properties. Ground zerg should have 1 for range, all other properties set to 10. 
+        <li> Create function evolutionPool, which accepts a zerg and an evolution method. The evolution method is used on the zerg.
+    <h4>Task 13-b</h4>
+        <li> Create two evolution functions, which take a zerg as an argument. For groundZerg increase armor and health by 10. For flyingZerg increase power and range by 5. Evolution method function should ensure that current evolution method is acceptable for current zerg type, otherwise evolution should be interrupted with error.
+        <li> Now use your zergs, evolution pool and evolution methods in order to evolutionate. Log the results. Try to evolutionate groundZerg with flyingZerg evolution method. 
+    <h4>Task 13-c</h4>
+        <li> Define an array with name zergSquad. 
+        <li> Create a function, which takes an object and creates new property - evolutionCount on that object. It should also check if that property is already defined. Each time a zerg is being evolutioned - increment this value. 
+        <li> Attach function from step 2 to each of evolution method. 
+        <li> Add to zergSquad only those zergs, which have evolutionCount > 2. 
+        <li> Log zergSquad.
+        <script>
+             console.log("TASK 13 a-b");
+         let groundZerg1 = {
+             power: 10,
+             health: 10,
+             armor: 10,
+             range: 1,
+         };
+        
+         let flyingZerg1 = {
+             power: 10,
+             health: 10,
+             armor: 10,
+             range: 10,
+         };
+        
+         function evolutionPool(zerg, evolutionMethod){
+             evolutionMethod(zerg);
+         }
+        
+         function groundZergEvolution(zerg){
+             if(zerg.range > 1) {
+                 console.error('Not a ground zerg!');
+                 return;
+             }
+        
+             zerg.armor += 10;
+             zerg.health += 10;
+         }
+        
+         function flyingZergEvolution(zerg){
+             if(zerg.range === 1) {
+                 console.error('Not a flying zerg!');
+                 return;
+             }
+        
+             zerg.power += 10;
+             zerg.range += 10;
+         }
+        
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, flyingZergEvolution);
+        
+         evolutionPool(flyingZerg1, flyingZergEvolution);
+         evolutionPool(flyingZerg1, groundZergEvolution);
+        
+         console.log(groundZerg1, flyingZerg1);
+
+         console.log("task 13 c is inactive");
+        // let groundZerg1 = {
+        //     power: 10,
+        //     health: 10,
+        //     armor: 10,
+        //     range: 1,
+        // };
+        //
+        // let flyingZerg1 = {
+        //     power: 10,
+        //     health: 10,
+        //     armor: 10,
+        //     range: 10,
+        // };
+        //
+        // function evolutionPool(zerg, evolutionMethod){
+        //     evolutionMethod(zerg);
+        // }
+        //
+        // function groundZergEvolution(zerg){
+        //     if(zerg.range > 1) {
+        //         console.error('Not a ground zerg!');
+        //         return;
+        //     }
+        //
+        //     zerg.armor += 10;
+        //     zerg.health += 10;
+        // }
+        //
+        // function flyingZergEvolution(zerg){
+        //     if(zerg.range === 1) {
+        //         console.error('Not a flying zerg!');
+        //         return;
+        //     }
+        //
+        //     zerg.power += 10;
+        //     zerg.range += 10;
+        // }
+        //
+        // evolutionPool(groundZerg1, groundZergEvolution);
+        // evolutionPool(groundZerg1, groundZergEvolution);
+        // evolutionPool(groundZerg1, flyingZergEvolution);
+        //
+        // evolutionPool(flyingZerg1, flyingZergEvolution);
+        // evolutionPool(flyingZerg1, groundZergEvolution);
+        //
+        // console.log(groundZerg1, flyingZerg1);
+
+        // Task 3c
+        // let zergSquad = [];
+        //
+        // let groundZerg1 = {
+        //     power: 10,
+        //     health: 10,
+        //     armor: 10,
+        //     range: 1,
+        // };
+        //
+        // let flyingZerg1 = {
+        //     power: 10,
+        //     health: 10,
+        //     armor: 10,
+        //     range: 10,
+        // };
+        //
+        // function evolutionPool(zerg, evolutionMethod){
+        //     evolutionMethod(zerg);
+        // }
+        //
+        // function groundZergEvolution(zerg){
+        //     if(zerg.range > 1) {
+        //         console.error('Not a ground zerg!');
+        //         return;
+        //     }
+        //
+        //     evolutionCounter(zerg);
+        //
+        //     if(zerg.evolutionCounter > 2) {
+        //         zergSquad.push(zerg);
+        //     }
+        //
+        //     zerg.armor += 10;
+        //     zerg.health += 10;
+        // }
+        //
+        // function flyingZergEvolution(zerg){
+        //     if(zerg.range === 1) {
+        //         console.error('Not a flying zerg!');
+        //         return;
+        //     }
+        //
+        //     zerg.power += 10;
+        //     zerg.range += 10;
+        //     evolutionCounter(zerg);
+        //
+        //     if(zerg.evolutionCounter > 2) {
+        //         zergSquad.push(zerg);
+        //     }
+        // }
+        //
+        // function evolutionCounter(zerg){
+        //     if(zerg['evolutionCounter'] === undefined) {
+        //         zerg.evolutionCounter = 0;
+        //     }
+        //
+        //     zerg.evolutionCounter++;
+        // }
+        //
+        // evolutionPool(groundZerg1, groundZergEvolution);
+        // evolutionPool(groundZerg1, groundZergEvolution);
+        // evolutionPool(groundZerg1, groundZergEvolution);
+        // evolutionPool(groundZerg1, flyingZergEvolution);
+        //
+        // evolutionPool(flyingZerg1, flyingZergEvolution);
+        // evolutionPool(flyingZerg1, groundZergEvolution);
+        //
+        // console.log(groundZerg1, flyingZerg1, zergSquad);
+
+        </script>
+     <h2 id="paragraph_task">Task 14</h2>
+     <h3>Code execution order , Local stroge</h3>
+        <li> In loop create 3 objects with property name. Use the next names: Artanis, Zeratul, Amon.
+        <li> Store each of them in localStorage, use their names as keys. <li> Write function that can delete one of them by name. 
+        <li> Create function that can wipe localStorage. 
+        <li> Use function from step 3. Log storage. Use function from step 4. Log storage.
+            <script> 
+                console.log("TASK 14");
+            </script>
+
+
+</body>
+
+</html>

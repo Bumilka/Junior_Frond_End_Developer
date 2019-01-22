@@ -40,7 +40,7 @@
 //})
 // nie dokończone
 
-
+/*
 let names = [ 'Arek' , 'Darek' , 'Czarek' , 'Mariusz' , 'MArek', 'Wiesław' , 'Aneta' , 'Stanisław'];
 let fullNames = names.map (name => {
     if(name.slice(-1) ==='a'){
@@ -62,3 +62,4 @@ fullNames.forEach ( fullNames => {
  // reduce all firNames
  .reduce((prev, firstName) => prev + firstName.length, 0);
 console.log(test);
+*/
