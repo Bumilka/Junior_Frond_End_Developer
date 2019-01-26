@@ -26,7 +26,8 @@
     <h2 id="paragraph_task">Task 3</h2>
         <li>Create string and number literal and use typeof operator in order to check its type
         <script>
-            console.log("TASK 3");
+            console.log("TASK 3 is inactive");
+            /*
              let str1 = "String 1";
 
             console.log(str1);
@@ -39,11 +40,12 @@
 
             console.log("str1 to " + typeof(str1));
             console.log("num to " + typeof(num));
+            */
         </script>
     <h2 id="paragraph_task">Task 4</h2>
         <li>Create let variable and log it. Create const variable and try to reassign it.
         <script>
-            console.log("TASK 4");
+            console.log("TASK 4 is inactive");
             /*
             const x = 10;
             console.log(x);
@@ -56,8 +58,8 @@
         <li>Create 8 examples with each comparison operator, so that the result will be true
         <li>Create 8 examples with each comparison operator, so that the result will be false
         <script>
-            console.log("TASK 5");
-            
+            console.log("TASK 5 is inactive");
+            /*
             let a = 2;
             let b = 2;
             
@@ -67,7 +69,6 @@
             console.log(++a);
             console.log(a);
             console.log(-a);
-            
             
             console.log(a == b);
             console.log(a === b);
@@ -92,6 +93,7 @@
             a = 1;
             console.log(a > b);
             console.log(a >= b);
+            */
 
         </script>
     <h2 id="paragraph_task">Task 6</h2>
@@ -100,7 +102,8 @@
         <li>Log 3 statements with false 
         <li> Mix at least to different operators
         <script>
-            console.log("TASK 6");
+            console.log("TASK 6 is inactive");
+            /*
             let aa = 10;
             let bb = 15;
             let cc = 20;
@@ -111,6 +114,7 @@
             console.log( !(aa == bb) && (aa != bb) && (aa > cc));
             console.log( (aa != bb) && (aa >= bb) && (bb <= cc));
             console.log( (!(aa != bb) || (aa > bb) || !(aa > cc)) || (aa <= cc)) ;
+            */
         </script>
     <h2 id="paragraph_task">Task 7</h2>
     <h3> If-else statements, ternary operator</h3>
@@ -118,7 +122,8 @@
         should log different messages. Make them show every path. 
         <li> Rewrite it to ternary shape
         <script>
-            console.log("TASK 7");
+            console.log("TASK 7 is inactive");
+            /*
             let a1 = 10;
             let b2 = 15;
             if ( a1 === 10 && b2 === 10){
@@ -130,6 +135,7 @@
             }
             //ternary shape
             console.log("Stwierdzenie A jest mniejsze od B to " + (a1 > b2 ? true : false));
+            */
         </script>
     <h2 id="paragraph_task">Task 8</h2>
     <h3>Switch statement</h3>
@@ -140,13 +146,15 @@
         default path chosen. 
         <li>Change the statement, so few logical paths are merged.
         <script>
-            console.log("TASK 8");
+            console.log("TASK 8 is inactive");
+            /*
             let date = '2018';
             switch (date){
                 case '2018': console.log("Mamy 2018 rok");
                 case '2019': console.log("Data jest w przyszłości"); break
                 default: console.log("Poza zakresem kalendarza");
             }
+            */
         </script>
     <h2 id="paragraph_task">Task 9</h2>
     <h3>Array</h3>
@@ -157,24 +165,35 @@
         <li> Unshift new name Shepard 
         <li> Compare index 3 from initial array to index 1 from new. Should be true.
         <script>
-            console.log("TASK 9");
+            console.log("TASK 9 is inactive");
+
             let names = ["Ania", "Ewelina", "Karina", "Elina"];
+            console.log(names)
+            // length - długość tablicy
+            // .push - przekazanie, dodanie
+            names.push("Andromeda", "Natasha"); 
             console.log(names);
-            names.push("Andromeda", "Natasha");
-            console.log(names);
+            // indexOf - zwraca indeks elementu z tablicy
             let indexOfEwelina = names.indexOf("Ewelina");
-            console.log(indexOfEwelina);
-            newIndexOfEwelina = indexOfEwelina + 2;
+            console.log(indexOfEwelina)
+
+            let newIndexOfEwelina = indexOfEwelina + 2;
             console.log(newIndexOfEwelina);
-            let newArray = (names.slice(newIndexOfEwelina, names.indexOf("Natasha")));
+
+            // .slice - pobiera 2 części tablicy (Indeks końcowy nie jest uwzgledniany, lecz jej poprzednik)
+            let newArray = (names.slice(indexOfEwelina, names.indexOf("Natasha")));
             console.log(newArray);
-            newArray.unshift("Shepard");
-            console.log(newArray);
-            if(names[3] == newArray[1]){
+
+            newArray.shift("Shepard")
+            console.log(newArray)
+
+            // [] - dostęp do elementu w tablicy
+            if (names[3] == newArray[1]){
                 console.log(true);
             }else{
-                console.log(false);
-            }
+                console.log(false)
+            };
+
         </script>
     <h2 id="paragraph_task">Task 10</h2>
     <h3>Loops</h3>
@@ -185,7 +204,7 @@
         <li> Stop iteration if the value equals to 31 
         <script>
             console.log("TASK 10");
-
+            /*
             let start = 1;
             let end = 35;
             let array = [];
@@ -231,6 +250,7 @@
 
                     console.warn('warn', i);
                 }
+                */
         </script>
     <h2 id="paragraph_task">Task 11</h2>
     <h3>Objects in JS</h3>
@@ -239,7 +259,8 @@
         <li> Compare strength of the hero and the enemy, if hero is stronger, then iterate over loot and find GOLD!!! Log it with warn.
         <script>
             console.log("TASK 11");
-                       
+            /*   
+            
              let hero = {
                  strength: 0,
                  knowledge: 'avg',
@@ -273,6 +294,7 @@
              function getRandomValue(){
                  return +Number(Math.random() * 100).toPrecision(4);
              }
+             */
         </script>
 
     <h2 id="paragraph_task">Task 12</h2>
@@ -282,6 +304,8 @@
         <li> In the true case extract 3,4,15,16,19,20 indices and unite them. Log the value with message ‘I am <............<your result>>’
         <script>
             console.log("TASK 12");
+
+            /*
               
              let things1 = new String('STRElanger THinevgsen');
              let things2 = new String('STRElanger THinevgsen');
@@ -297,6 +321,7 @@
                  let enigmaticName = things1.slice(3,5) + things1.slice(15, 17) + things1.slice(19, 21);
                  console.warn(`I am ${enigmaticName}`);
              }
+             */
         </script>
 
     <h2 id="paragraph_task">Task 13</h2>
@@ -315,6 +340,7 @@
         <li> Log zergSquad.
         <script>
              console.log("TASK 13 a-b");
+            /*
          let groundZerg1 = {
              power: 10,
              health: 10,
@@ -362,124 +388,127 @@
         
          console.log(groundZerg1, flyingZerg1);
 
+         */
+
          console.log("task 13 c is inactive");
-        // let groundZerg1 = {
-        //     power: 10,
-        //     health: 10,
-        //     armor: 10,
-        //     range: 1,
-        // };
-        //
-        // let flyingZerg1 = {
-        //     power: 10,
-        //     health: 10,
-        //     armor: 10,
-        //     range: 10,
-        // };
-        //
-        // function evolutionPool(zerg, evolutionMethod){
-        //     evolutionMethod(zerg);
-        // }
-        //
-        // function groundZergEvolution(zerg){
-        //     if(zerg.range > 1) {
-        //         console.error('Not a ground zerg!');
-        //         return;
-        //     }
-        //
-        //     zerg.armor += 10;
-        //     zerg.health += 10;
-        // }
-        //
-        // function flyingZergEvolution(zerg){
-        //     if(zerg.range === 1) {
-        //         console.error('Not a flying zerg!');
-        //         return;
-        //     }
-        //
-        //     zerg.power += 10;
-        //     zerg.range += 10;
-        // }
-        //
-        // evolutionPool(groundZerg1, groundZergEvolution);
-        // evolutionPool(groundZerg1, groundZergEvolution);
-        // evolutionPool(groundZerg1, flyingZergEvolution);
-        //
-        // evolutionPool(flyingZerg1, flyingZergEvolution);
-        // evolutionPool(flyingZerg1, groundZergEvolution);
-        //
-        // console.log(groundZerg1, flyingZerg1);
+         /*
+         let groundZerg1 = {
+             power: 10,
+             health: 10,
+             armor: 10,
+             range: 1,
+         };
+        
+         let flyingZerg1 = {
+             power: 10,
+             health: 10,
+             armor: 10,
+             range: 10,
+         };
+        
+         function evolutionPool(zerg, evolutionMethod){
+             evolutionMethod(zerg);
+         }
+        
+         function groundZergEvolution(zerg){
+             if(zerg.range > 1) {
+                 console.error('Not a ground zerg!');
+                 return;
+             }
+        
+             zerg.armor += 10;
+             zerg.health += 10;
+         }
+        
+         function flyingZergEvolution(zerg){
+             if(zerg.range === 1) {
+                 console.error('Not a flying zerg!');
+                 return;
+             }
+        
+             zerg.power += 10;
+             zerg.range += 10;
+         }
+        
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, flyingZergEvolution);
+        
+         evolutionPool(flyingZerg1, flyingZergEvolution);
+         evolutionPool(flyingZerg1, groundZergEvolution);
+        
+         console.log(groundZerg1, flyingZerg1);
 
-        // Task 3c
-        // let zergSquad = [];
-        //
-        // let groundZerg1 = {
-        //     power: 10,
-        //     health: 10,
-        //     armor: 10,
-        //     range: 1,
-        // };
-        //
-        // let flyingZerg1 = {
-        //     power: 10,
-        //     health: 10,
-        //     armor: 10,
-        //     range: 10,
-        // };
-        //
-        // function evolutionPool(zerg, evolutionMethod){
-        //     evolutionMethod(zerg);
-        // }
-        //
-        // function groundZergEvolution(zerg){
-        //     if(zerg.range > 1) {
-        //         console.error('Not a ground zerg!');
-        //         return;
-        //     }
-        //
-        //     evolutionCounter(zerg);
-        //
-        //     if(zerg.evolutionCounter > 2) {
-        //         zergSquad.push(zerg);
-        //     }
-        //
-        //     zerg.armor += 10;
-        //     zerg.health += 10;
-        // }
-        //
-        // function flyingZergEvolution(zerg){
-        //     if(zerg.range === 1) {
-        //         console.error('Not a flying zerg!');
-        //         return;
-        //     }
-        //
-        //     zerg.power += 10;
-        //     zerg.range += 10;
-        //     evolutionCounter(zerg);
-        //
-        //     if(zerg.evolutionCounter > 2) {
-        //         zergSquad.push(zerg);
-        //     }
-        // }
-        //
-        // function evolutionCounter(zerg){
-        //     if(zerg['evolutionCounter'] === undefined) {
-        //         zerg.evolutionCounter = 0;
-        //     }
-        //
-        //     zerg.evolutionCounter++;
-        // }
-        //
-        // evolutionPool(groundZerg1, groundZergEvolution);
-        // evolutionPool(groundZerg1, groundZergEvolution);
-        // evolutionPool(groundZerg1, groundZergEvolution);
-        // evolutionPool(groundZerg1, flyingZergEvolution);
-        //
-        // evolutionPool(flyingZerg1, flyingZergEvolution);
-        // evolutionPool(flyingZerg1, groundZergEvolution);
-        //
-        // console.log(groundZerg1, flyingZerg1, zergSquad);
-
+         Task 3c
+         let zergSquad = [];
+        
+         let groundZerg1 = {
+             power: 10,
+             health: 10,
+             armor: 10,
+             range: 1,
+         };
+        
+         let flyingZerg1 = {
+             power: 10,
+             health: 10,
+             armor: 10,
+             range: 10,
+         };
+        
+         function evolutionPool(zerg, evolutionMethod){
+             evolutionMethod(zerg);
+         }
+        
+         function groundZergEvolution(zerg){
+             if(zerg.range > 1) {
+                 console.error('Not a ground zerg!');
+                 return;
+             }
+        
+             evolutionCounter(zerg);
+        
+             if(zerg.evolutionCounter > 2) {
+                 zergSquad.push(zerg);
+             }
+        
+             zerg.armor += 10;
+             zerg.health += 10;
+         }
+        
+         function flyingZergEvolution(zerg){
+             if(zerg.range === 1) {
+                 console.error('Not a flying zerg!');
+                 return;
+             }
+        
+             zerg.power += 10;
+             zerg.range += 10;
+             evolutionCounter(zerg);
+        
+             if(zerg.evolutionCounter > 2) {
+                 zergSquad.push(zerg);
+             }
+         }
+        
+         function evolutionCounter(zerg){
+             if(zerg['evolutionCounter'] === undefined) {
+                 zerg.evolutionCounter = 0;
+             }
+        
+             zerg.evolutionCounter++;
+         }
+        
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, groundZergEvolution);
+         evolutionPool(groundZerg1, flyingZergEvolution);
+        
+         evolutionPool(flyingZerg1, flyingZergEvolution);
+         evolutionPool(flyingZerg1, groundZergEvolution);
+        
+         console.log(groundZerg1, flyingZerg1, zergSquad);
+         */
         </script>
      <h2 id="paragraph_task">Task 14</h2>
      <h3>Code execution order , Local stroge</h3>
