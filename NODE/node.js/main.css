@@ -1,0 +1,11 @@
+body{
+    background:  black;
+}
+#text{
+    color:  red;
+    text-align: center;
+}
+#text-lorem{
+    color: white;
+    text-align: center;
+}
