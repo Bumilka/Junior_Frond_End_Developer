@@ -1,0 +1,24 @@
+#app_container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 500px;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.name_text, .text, .about_text{
+  text-align: left;
+  padding: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.name_text{
+  background: rgb(247, 245, 245);
+}
+.text{
+  background: rgb(194, 191, 191);
+}
+.about_text{
+  background: rgb(139, 136, 136);
+}
